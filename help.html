@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Help & Policy — MarkMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand"><img src="markmate-logo.png" alt=""></a><div>MarkMate</div></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="test.html">Test</a>
+      <a href="results.html">Results</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page">
+      <h2>Help & Guidelines</h2>
+
+      <div style="display:grid;gap:18px">
+        <div class="form-panel">
+          <h3>How SGPA & CGPA are calculated (demo)</h3>
+          <p class="small-muted">This static demo uses a simplified calculation for demonstration.</p>
+          <ol class="small-muted">
+            <li>Each subject has a marks value (for demo we show marks out of 100).</li>
+            <li>SGPA is calculated as (Total Marks / (Number of subjects * 100)) * 10 — scaled to 10.</li>
+            <li>CGPA is a multi-semester average of SGPAs (in real systems you keep cumulative credits into account).</li>
+          </ol>
+        </div>
+
+        <div class="form-panel">
+          <h3>Test Instructions</h3>
+          <ul class="small-muted">
+            <li>Make sure you are registered and logged in as a student before starting the test.</li>
+            <li>Once you click <strong>Start Test</strong>, the 30 minute timer begins.</li>
+            <li>Questions appear one-by-one. Use Next/Previous to navigate. Use the <strong>Finish</strong> or <strong>Submit</strong> button when done.</li>
+            <li>Do not refresh the page during the test. This demo stores answers locally; in production you'd save periodically to server.</li>
+            <li>At the end, results are saved and viewable in the Results page by entering your roll number.</li>
+          </ul>
+        </div>
+
+        <div class="form-panel">
+          <h3>Privacy Policy (short)</h3>
+          <p class="small-muted">This is a static demo. All user data (registration & test attempts) is stored locally on your browser (localStorage). In a real deployment:</p>
+          <ul class="small-muted">
+            <li>We would store hashed passwords and encrypted records on secure servers.</li>
+            <li>Only authorized admins can view student results.</li>
+            <li>Personal data will not be shared with third parties without consent.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

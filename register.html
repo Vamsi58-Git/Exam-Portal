@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — MarkMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand"><img src="markmate-logo.png" alt=""><div>MarkMate</div></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="test.html">Test</a>
+      <a href="help.html">Help</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page">
+      <h2>Student Registration</h2>
+      <p class="small-muted">Fill basic details to create your student account.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:16px">
+        <form id="register-form" class="form form-panel">
+          <div class="input"><label>Full Name</label><input name="name" required placeholder="Your Full Name"></div>
+          <div class="input"><label>Roll Number</label><input name="roll" required placeholder="e.g. 23CXDF"></div>
+          <div class="row">
+            <div class="input" style="flex:1"><label>Password</label><input type="password" name="password" required placeholder="Enter password"></div>
+            <div class="input" style="flex:1"><label>Confirm Password</label><input type="password" name="confirm" required placeholder="Confirm password"></div>
+          </div>
+          <div class="row">
+            <div class="input" style="flex:1"><label>Year of Study</label>
+              <select name="year">
+                <option>First</option><option>Second</option><option>Third</option><option>Fourth</option>
+              </select>
+            </div>
+            <div class="input" style="flex:1"><label>Semester</label>
+              <select name="sem">
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+              </select>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:flex-end;margin-top:8px">
+            <button class="btn" type="submit">Create Account</button>
+          </div>
+          <div class="small-muted" style="margin-top:10px">By registering you agree to privacy policy in Help page.</div>
+        </form>
+
+        <div class="form-panel">
+          <h3 style="color:#fff">Why register?</h3>
+          <p class="small-muted">Registration enables saving test attempts, viewing personalized results and secure access to future exams.</p>
+          <ul class="small-muted" style="margin-top:10px;line-height:1.6">
+            <li>Use your Roll Number as login ID</li>
+            <li>All data stored locally in this static demo (localStorage)</li>
+            <li>Admin can view results via admin login</li>
+          </ul><img src="online-entrance-exam.png" alt="Online exam illustration" style="width:100%;max-width:500px;max-height:300px;margin-top:12px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.4)">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

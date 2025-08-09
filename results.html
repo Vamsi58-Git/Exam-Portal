@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Results — MarkMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand"><img src="markmate-logo.png" alt=""><div>MarkMate</div></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="test.html">Test</a>
+      <a href="help.html">Help</a>
+      <a class="cta" href="login.html">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page">
+      <h2>Results Lookup</h2>
+      <p class="small-muted">Enter your roll number to view the latest Results.</p>
+
+        <form id="results-lookup" style="display:flex;gap:8px;align-items:center;margin-top:12px">
+        <div class="input" style="flex:1">
+             <input name="roll" placeholder="Enter your roll number e.g. 23A51AXXXX" required>
+         </div>
+        <button class="btn" type="submit">View Results</button>
+         </form>
+
+      <div id="results-area" style="margin-top:18px"></div>
+    </section>
+  </main>
+</body>
+</html>
