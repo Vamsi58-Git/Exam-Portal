@@ -15,6 +15,8 @@ It includes **Register**, **Login**, **Test**, and **Results** pages, with a con
 
 ├── register.html # Registration form
 
+├── app.js # For test questions and the timer for 30 min
+
 ├── login.html # Login form with Student/Admin switch
 
 ├── test.html # Test Registration page, questions will be added soon
